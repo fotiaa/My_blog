@@ -13,7 +13,15 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Script src='/sc.js' strategy="lazyonload"></Script>
+      {/* <Script src='/sc.js' strategy="lazyonload"></Script> */}
+      <nav className={styles.mainnav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -24,35 +32,21 @@ export default function Home() {
         Trying to make a blog web app which is useful
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.blogs}>
+          <h2>Popular Blogs</h2>
+          <div className={styles.blogItem}>
+            <h4>How to learn new javascript</h4>
+            <p>Javascript is the language used to design logic for the web</p>
+          </div>
         </div>
+
+        <div className={styles.blogs}>
+          <div className={styles.blogItem}>
+            <h4>How to learn new javascript</h4>
+            <p>Javascript is the language used to design logic for the web</p>
+          </div>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
